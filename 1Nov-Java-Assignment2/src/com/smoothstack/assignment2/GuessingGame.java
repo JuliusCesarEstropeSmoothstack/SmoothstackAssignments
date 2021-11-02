@@ -5,8 +5,6 @@
  */
 package com.smoothstack.assignment2;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
