@@ -31,7 +31,7 @@ public class FindMax {
 	}
 
 /**** HELPER FUNCTIONS ****/
-
+	
 	/*
 	 * Generates a random 2D Array of integers. 
 	 * lowerBound - integer value that must be smaller than upperBound
@@ -56,16 +56,23 @@ public class FindMax {
 	 * Finds the maximum value within a given 2D array
 	 */
 	private int findMax(int[][] intArray2D) {
-		int max = intArray2D[0][0];
-		
+		Integer max = intArray2D[0][0];
+		Integer i = 0, j = 0;
+		Integer maxIndexI = 0, maxIndexJ = 0;
+
 		for (int[] intArray : intArray2D) {
 			for (int integer : intArray) {
 				if (integer > max) {
 					max = integer;
+					maxIndexI = i;
+					maxIndexJ = j;
 				}
+				j++;
 			}
+			j = 0;
+			i++;
 		}
-		
+		System.out.println("Max found at index: " + maxIndexI + ", " + maxIndexJ);
 		return max;
 	}
 
