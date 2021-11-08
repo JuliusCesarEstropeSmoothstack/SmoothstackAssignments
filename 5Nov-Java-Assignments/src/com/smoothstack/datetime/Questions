@@ -1,0 +1,16 @@
+1.	To store a birthday, you would want to use a LocalDate object because 
+	it is immutable and capable of storing year, month, day, second, and nanosecond
+
+2.	Code in GetPreviousDay class
+
+3.	A ZoneID is used to define the rules for converting between an Instant (time since 1970-01-01T00:00:00Z) 
+	and LocalDateTime (human-readable format)
+	A ZoneOffset is the amount of time that a time-zone differs from GMT/UTC
+	
+4.	Code in DateTimeConversions
+
+5.	Code in MonthLengthReport
+
+6.	Code in ListMondaysOfMonth
+
+7.	Code in SuperstitionEvaluator
